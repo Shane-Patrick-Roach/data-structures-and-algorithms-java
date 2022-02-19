@@ -18,3 +18,6 @@ The methods availabe are insert and include.
 
 - Include allows you to search the list for a given value and returns a boolean.
 
+## References and Citations
+- Referenced Ben Mills approach
+- Referenced [Video on Linked List](https://www.youtube.com/watch?v=SMIq13-FZSE&ab_channel=Telusko)
