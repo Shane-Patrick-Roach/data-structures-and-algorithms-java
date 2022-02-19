@@ -1,11 +1,20 @@
-# Data Structures
+# Singly Linked List
 
-## Implementation Notes
 
-## Code Challenges
+## Challenge
+Create a Node class that has the properties for the value stored in the Node, and the pointer to the next node.
 
-### Challenge 01
+## Approach & Efficiency
 
-Location: `codechallenges/linkedlist/LinkedListChallenges`
+- The big(O) os creating a new node with `insert` would be O(1) because you only need to input the value and the information for the next node.
 
-Method: `linkedListChallenge06()`
+- The big(o) time efficiency would for searching the array for a given value would be O(n). It would have to iterate over the entire list until the value is found. 
+
+## API
+
+The methods availabe are insert and include.
+
+- Insert allows the creation of a new node at the head of the list.
+
+- Include allows you to search the list for a given value and returns a boolean.
+
