@@ -2,8 +2,8 @@
 package datastructures.linkedlist;
 
 public class Node {
-  private int value;
-  private Node next = null;
+  public int value;
+  public Node next = null;
 
   Node(int value) {
     this.value = value;
@@ -11,17 +11,5 @@ public class Node {
 
   Node() {
     //empty
-  }
-
-  public int getValue() {
-    return value;
-  }
-
-  public Node getNext() {
-    return next;
-  }
-
-  public void setNext(Node node ) {
-    next = node;
   }
 }
