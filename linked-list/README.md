@@ -6,18 +6,35 @@ Create a Node class that has the properties for the value stored in the Node, an
 
 ## Approach & Efficiency
 
-- The big(O) os creating a new node with `insert` would be O(1) because you only need to input the value and the information for the next node.
+### Conceptual Diagrams / Whiteboards
+Code Challenge 06: ![Code Challenge 06 Diagram](./lib/images/Java_CodeChallenge06.jpg)
 
-- The big(o) time efficiency would for searching the array for a given value would be O(n). It would have to iterate over the entire list until the value is found. 
+### Analysis of Each Method
+The methods available are insert, include, append, insertBefore, and insertAfter.
 
-## API
+### Insert
+- The big(O) space would be O(1) because you are only adding a new object in a known location (at the beginning of the list). 
+- The big(O) time would be O(1). 
+### Includes
+- The big(O) space would be O(n) because you have to search list until you find node with correct value.
+- The big(O) time would be O(n) because it would take however long until the correct value is found in the list.
 
-The methods availabe are insert and include.
+### Append
+- Append allows you to add a new node to the end of the linked list. It takes in one argument Value, which is the value to be added.
+- The big(O) space would be O(n) because you have to travers the entire list to find the last node.
+- The big(O) time would be O(n) because you have to travers the entire list to find the last node.
 
-- Insert allows the creation of a new node at the head of the list.
+### Insert Before
+- InsertBefore allows you to add a new node with the given new value immediately after the first node that haas the specified value.
+- The big(O) space would be O(n) because you have to search list until you find node with correct value.
+- The big(O) time would be O(n) because it would take however long until the correct value is found in the list.
 
-- Include allows you to search the list for a given value and returns a boolean.
+### Insert After
+- InsertAfter allows you to add a given new value immediately after the first node that has the value specified.
+- The big(O) space would be O(n) because you have to search list until you find node with correct value.
+- The big(O) time would be O(n) because it would take however long until the correct value is found in the list.
+
 
 ## References and Citations
-- Referenced Ben Mills approach
+- Referenced Ben Mills approach for a solid base.
 - Referenced [Video on Linked List](https://www.youtube.com/watch?v=SMIq13-FZSE&ab_channel=Telusko)
