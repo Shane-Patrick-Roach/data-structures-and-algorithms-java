@@ -131,9 +131,73 @@ public class LinkedListTest
         assert(sut.toString().equals("{3} -> {10} -> {5} -> {30} -> NULL"));
     }
 
+    @Test
+    void testSize(){
+        LinkedList sut = new LinkedList();
+        sut.insert(5);
+        sut.insert(10);
+        sut.insert(3);
+        System.out.println(sut.size());
+    }
 
 
+    @Test
+    void testKthFromEndGreaterThanLength(){
+        LinkedList sut = new LinkedList();
+        sut.insert(5);
+        sut.insert(10);
+        sut.insert(3);
+        sut.size();
+        System.out.println(sut);
+        System.out.println(sut.kthFromEnd(10));
+        assert(sut.kthFromEnd(10) == 0);
+    }
 
+    @Test
+    void testKthFromEndSameLength(){
+        LinkedList sut = new LinkedList();
+        sut.insert(1);
+        sut.insert(3);
+        sut.insert(8);
+        sut.insert(2);
+        sut.size();
+        System.out.println(sut);
+        assert(sut.kthFromEnd(4) == 0);
+    }
+
+    @Test
+    void testKthFromEndPositiveInt(){
+        LinkedList sut = new LinkedList();
+        sut.insert(1);
+        sut.insert(3);
+        sut.insert(8);
+        sut.insert(2);
+        sut.size();
+        System.out.println(sut);
+        assert(sut.kthFromEnd(2) == 8);
+    }
+
+    @Test
+    void testKthFromEndSizeOne(){
+        LinkedList sut = new LinkedList();
+        sut.insert(1);
+        sut.size();
+        System.out.println(sut);
+        assert(sut.kthFromEnd(0) == 1);
+    }
+
+    @Test
+    void testKthFromEndMiddleOfList(){
+        LinkedList sut = new LinkedList();
+        sut.insert(1);
+        sut.insert(1);
+        sut.insert(3);
+        sut.insert(8);
+        sut.insert(2);
+        sut.size();
+        System.out.println(sut);
+        assert(sut.kthFromEnd(2) == 3);
+    }
 
 }
 

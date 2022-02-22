@@ -4,13 +4,27 @@ import datastructures.linkedlist.Node;
 
 import java.util.ArrayList;
 
+import static java.lang.Math.abs;
+
 public class LinkedList {
   Node head = null;
+  int size;
 
   public void insert(int value) {
     Node newHead = new Node(value);
     newHead.setNext(head);
     head = newHead;
+  }
+
+  public int size(){
+    Node currentNode = head;
+    int counter = 0;
+    while (currentNode != null){
+      counter++;
+      currentNode=currentNode.getNext();
+    }
+    size = counter;
+    return counter;
   }
 
   public boolean includes(int value) {
@@ -74,6 +88,22 @@ public class LinkedList {
         currentNode = currentNode.getNext();
       }
     }
+  }
+
+  public int kthFromEnd(int k){
+    try {
+      Node currentNode = head;
+      for (int i = 0; i < size; i++) {
+        if (i == (size - abs(k) - 1)) {
+          return currentNode.getValue();
+        } else {
+          currentNode = currentNode.getNext();
+        }
+      }
+    } catch (Exception e){
+      e.printStackTrace();
+    }
+    return 0;
   }
 
 
