@@ -2,15 +2,23 @@
 
 
 ## Challenge
-Create a Node class that has the properties for the value stored in the Node, and the pointer to the next node.
+Build out each of the following methods to traverse and manipulate a single linked list.
 
 ## Approach & Efficiency
 
 ### Conceptual Diagrams / Whiteboards
 Code Challenge 06: ![Code Challenge 06 Diagram](./lib/images/Java_CodeChallenge06.jpg)
+Code Challenge 07: ![Code Challenge 07 Diagram](./lib/images/Java_CodeChallenge07.jpg)
 
 ### Analysis of Each Method
-The methods available are insert, include, append, insertBefore, and insertAfter.
+The methods available are;
+- insert
+- size
+- include
+- append
+- insertBefore
+- insertAfter
+- kthFromTheEnd
 
 ### Insert
 - The big(O) space would be O(1) because you are only adding a new object in a known location (at the beginning of the list). 
@@ -33,6 +41,11 @@ The methods available are insert, include, append, insertBefore, and insertAfter
 - InsertAfter allows you to add a given new value immediately after the first node that has the value specified.
 - The big(O) space would be O(n) because you have to search list until you find node with correct value.
 - The big(O) time would be O(n) because it would take however long until the correct value is found in the list.
+
+### Kth From The End
+- Kth From The End allows you to search the list for a given K value and returns the index of the value from the end of the list.
+- The big(O) space would be O(2n) because you have to first calculate the size of the list, then run through it again to find the K value.
+- The big(O) time would be O(1) constant time because in the worst case scenario you would have to traverse the entire list twice. 
 
 
 ## References and Citations
