@@ -91,7 +91,7 @@ public class LinkedList {
   }
 
   public int kthFromEnd(int k){
-    try {
+      //if (k>size) /*throw new Exception("K is too large for this list");*/
       Node currentNode = head;
       for (int i = 0; i < size; i++) {
         if (i == (size - abs(k) - 1)) {
@@ -100,9 +100,6 @@ public class LinkedList {
           currentNode = currentNode.getNext();
         }
       }
-    } catch (Exception e){
-      e.printStackTrace();
-    }
     return 0;
   }
 
