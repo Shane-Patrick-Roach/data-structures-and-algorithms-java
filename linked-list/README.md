@@ -9,6 +9,7 @@ Build out each of the following methods to traverse and manipulate a single link
 ### Conceptual Diagrams / Whiteboards
 Code Challenge 06: ![Code Challenge 06 Diagram](./lib/images/Java_CodeChallenge06.jpg)
 Code Challenge 07: ![Code Challenge 07 Diagram](./lib/images/Java_CodeChallenge07.jpg)
+Code Challenge 08: ![Code Challenge 08 Diagram](./lib/images/Java_CodeChallenge08.jpg)
 
 ### Analysis of Each Method
 The methods available are;
@@ -19,6 +20,8 @@ The methods available are;
 - insertBefore
 - insertAfter
 - kthFromTheEnd
+- zip
+- reverse
 
 ### Insert
 - The big(O) space would be O(1) because you are only adding a new object in a known location (at the beginning of the list). 
@@ -47,6 +50,11 @@ The methods available are;
 - The big(O) space would be O(2n) because you have to first calculate the size of the list, then run through it again to find the K value.
 - The big(O) time would be O(1) constant time because in the worst case scenario you would have to traverse the entire list twice. 
 
+### Zip
+- Zip accepts two linked lists as arguments and "zips" the lists together and returns a new linked list with alternating values of the two lists.
+- The space complexity is additional space complexity is O(n) because we have to reverse each input list. Then once we declare a new linked list. 
+We will run through each list again and use the insert method (O(1)) to add the nodes to the linked list.
+- What approach would allow you to keep and O(1)?
 
 ## References and Citations
 - Referenced Ben Mills approach for a solid base.
