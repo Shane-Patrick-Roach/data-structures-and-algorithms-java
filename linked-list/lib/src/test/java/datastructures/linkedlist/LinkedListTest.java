@@ -2,6 +2,7 @@ package datastructures.linkedlist;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LinkedListTest
@@ -148,21 +149,18 @@ public class LinkedListTest
         sut.insert(10);
         sut.insert(3);
         sut.size();
-        System.out.println(sut);
-        System.out.println(sut.kthFromEnd(10));
-        
+        assertThrows(Exception.class, () -> sut.kthFromEnd(10));
     }
 
     @Test
-    void testKthFromEndSameLength() throws Exception{
+    void testKthFromEndSameLength(){
         LinkedList sut = new LinkedList();
         sut.insert(1);
         sut.insert(3);
         sut.insert(8);
         sut.insert(2);
         sut.size();
-        System.out.println(sut);
-        assert(sut.kthFromEnd(4) == 0);
+        assertThrows(Exception.class, () -> sut.kthFromEnd(4));
     }
 
     @Test
@@ -173,7 +171,6 @@ public class LinkedListTest
         sut.insert(8);
         sut.insert(2);
         sut.size();
-        System.out.println(sut);
         assert(sut.kthFromEnd(2) == 8);
     }
 
@@ -182,7 +179,6 @@ public class LinkedListTest
         LinkedList sut = new LinkedList();
         sut.insert(1);
         sut.size();
-        System.out.println(sut);
         assert(sut.kthFromEnd(0) == 1);
     }
 
@@ -195,8 +191,60 @@ public class LinkedListTest
         sut.insert(8);
         sut.insert(2);
         sut.size();
-        System.out.println(sut);
         assert(sut.kthFromEnd(2) == 3);
+    }
+
+    @Test
+    void testZipper(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(2);
+        list1.insert(3);
+        list1.insert(1);
+        LinkedList list2 = new LinkedList();
+        list2.insert(4);
+        list2.insert(9);
+        list2.insert(5);
+        LinkedList list3 = new LinkedList();
+        list3 = list3.zip(list2,list1);
+        System.out.println(list3);
+        assert(list3.toString().equals("{1} -> {5} -> {3} -> {9} -> {2} -> {4} -> NULL"));
+    }
+
+    @Test
+    void testZipperWithDifferentSizes(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(2);
+        list1.insert(1);
+        LinkedList list2 = new LinkedList();
+        list2.insert(4);
+        list2.insert(9);
+        list2.insert(5);
+        list2.insert(13);
+        LinkedList list3 = new LinkedList();
+        list3 = list3.zip(list2,list1);
+        System.out.println(list3);
+        assert(list3.toString().equals("{13} -> {5} -> {1} -> {9} -> {2} -> {4} -> NULL"));
+    }
+
+    @Test
+    void testZipperWithNullValue(){
+        LinkedList list2 = new LinkedList();
+        list2.insert(4);
+        list2.insert(9);
+        list2.insert(5);
+        list2.insert(13);
+        LinkedList list3 = new LinkedList();
+        assertThrows(Exception.class, () -> list3.zip(list2,null));
+    }
+
+    @Test
+    void testReverse(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+        System.out.println(list1);
+        System.out.println(list1.reverse());
     }
 
 }
