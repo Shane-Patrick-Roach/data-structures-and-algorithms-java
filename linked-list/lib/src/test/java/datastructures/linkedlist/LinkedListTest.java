@@ -2,6 +2,8 @@ package datastructures.linkedlist;
 
 import org.junit.jupiter.api.Test;
 
+import java.sql.SQLOutput;
+
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -246,6 +248,21 @@ public class LinkedListTest
         System.out.println(list1);
         System.out.println(list1.reverse());
     }
+
+
+    @Test
+    void testPalindrome(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(1);
+        list1.insert(1);
+        list1.insert(1);
+
+        System.out.println(list1);
+        System.out.println(list1.isPalindrome(list1));
+
+    }
+
+
 
 }
 
