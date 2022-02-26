@@ -1,5 +1,6 @@
 package datastructures.linkedlist;
 
+import com.sun.source.tree.WhileLoopTree;
 import datastructures.linkedlist.Node;
 
 import java.util.ArrayList;
@@ -10,6 +11,28 @@ public class LinkedList {
   Node head = null;
   int size;
 
+
+
+  public Boolean isPalindrome(LinkedList list){
+    LinkedList list1 = list;
+    LinkedList list2 = list.reverse();
+
+    Node currentNodeList1 = list1.head;
+    Node currentNodeList2 = list2.head;
+
+    while (currentNodeList1 != null || currentNodeList2 != null){
+      if (currentNodeList1.value == currentNodeList2.value){
+        currentNodeList1 = currentNodeList1.getNext();
+        currentNodeList2 = currentNodeList2.getNext();
+      } else {
+        return false;
+      }
+
+    }
+
+    return true;
+
+  }
 
   public LinkedList reverse(){
     LinkedList reversedLinkedList = new LinkedList();
