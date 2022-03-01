@@ -11,5 +11,6 @@
 6. [linked-list: kth](/linked-list/README.md)
 7. [linked-list: zip](/linked-list/README.md)
 8. [Stacks and Queues Implementation](/linked-list/README.stacksAndQueues.md)
+9. [PsuedoQueue](/linked-list/README.codechallenges.md)
 
 
