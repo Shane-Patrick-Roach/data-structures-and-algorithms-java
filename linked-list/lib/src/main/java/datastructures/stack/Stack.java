@@ -2,17 +2,17 @@ package datastructures.stack;
 
 public class Stack <T>{
 
-    Node<T> top;
-    int size;
+    public Node<T> top;
+    public int size;
 
-    int push(T value){
+    public int push(T value){
         Node<T> newNode = new Node<>(value);
         newNode.nextNode = top;
         top = newNode;
         return size++;
     }
 
-    T pop() throws Exception {
+    public T pop() throws Exception {
         if (top == null){
             throw new Exception("Stack is Empty");
         }
@@ -27,7 +27,7 @@ public class Stack <T>{
         }
     }
 
-    T peek() throws Exception {
+    public T peek() throws Exception {
         if (top == null){
             throw new Exception("Stack is Empty");
         }
