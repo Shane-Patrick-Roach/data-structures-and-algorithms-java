@@ -3,11 +3,11 @@ package datastructures.queue;
 import datastructures.queue.Node;
 
 public class Queue <T>{
-    Node<T> front;
-    Node<T> back;
-    int size;
+    public Node<T> front;
+    public Node<T> back;
+    public int size;
 
-    int enqueue(T value){
+    public int enqueue(T value){
         if (front == null || back == null) {
             Node<T> newNode = new Node<>(value);
             front = newNode;
@@ -20,7 +20,7 @@ public class Queue <T>{
         return size++;
     }
 
-    T dequeue() throws Exception {
+    public T dequeue() throws Exception {
         if (front == null || back == null) throw new Exception("Queue is empty!");
         T var = front.value;
         front = front.nextNode;
@@ -30,7 +30,7 @@ public class Queue <T>{
 
 
 
-    T peek() throws Exception {
+    public T peek() throws Exception {
         if (front == null || back == null) throw new Exception("Queue is empty!");
         return front.value;
     }
