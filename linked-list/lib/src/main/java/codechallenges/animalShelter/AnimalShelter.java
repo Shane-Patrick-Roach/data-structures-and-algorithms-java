@@ -31,7 +31,7 @@ public class AnimalShelter{
         Animal chosen = null;
         if(pref.equals("dog")) {
             while (stack2.top!=null){
-                if (stack2.peek().type.equals("cat")){
+                if (stack2.peek().type.equals("dog")){
                     chosen = stack2.peek();
                     stack2.pop();
                     break;
@@ -66,7 +66,7 @@ public class AnimalShelter{
             return null;
         }
         size = stack2.size;
-
+        //System.out.println(chosen);
     return chosen;
 
     }

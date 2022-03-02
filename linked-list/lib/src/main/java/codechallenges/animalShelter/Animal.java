@@ -2,9 +2,11 @@ package codechallenges.animalShelter;
 
 public class Animal {
     public String type;
+    public String name;
 
-    public Animal(String type) {
+    public Animal(String type, String name) {
         this.type = type;
+        this.name = name;
     }
 
     public String getType() {
@@ -13,5 +15,21 @@ public class Animal {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
