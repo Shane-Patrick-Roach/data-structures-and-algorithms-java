@@ -2,7 +2,7 @@
 Implement a psuedo-queue using two stacks.
 
 ## Whiteboard Process
-Code Challenge 11: ![Code Challenge 11 Diagram](./lib/images/Java_CodeChallenge11.jpg)
+Code Challenge 11: ![Code Challenge 11 Diagram](../lib/images/Java_CodeChallenge11.jpg)
 
 
 ## Approach & Efficiency

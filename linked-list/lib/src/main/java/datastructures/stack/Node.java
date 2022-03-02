@@ -1,7 +1,7 @@
 package datastructures.stack;
 
 public class Node <T> {
-    T value;
+    public T value;
     Node <T> nextNode;
 
     public Node(T value) {
