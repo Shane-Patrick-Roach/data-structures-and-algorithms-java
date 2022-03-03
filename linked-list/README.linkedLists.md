@@ -9,7 +9,7 @@ Build out each of the following methods to traverse and manipulate a single link
 ### Conceptual Diagrams / Whiteboards
 Code Challenge 06: ![Code Challenge 06 Diagram](./lib/images/Java_CodeChallenge06.jpg)
 Code Challenge 07: ![Code Challenge 07 Diagram](./lib/images/Java_CodeChallenge07.jpg)
-Code Challenge 08: ![Code Challenge 08 Diagram](./lib/images/Java_CodeChallenge08.jpg)
+
 
 ### Analysis of Each Method
 The methods available are;

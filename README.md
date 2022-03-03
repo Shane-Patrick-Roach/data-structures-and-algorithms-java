@@ -13,5 +13,6 @@
 8. [Stacks and Queues Implementation](/linked-list/README.stacksAndQueues.md)
 9. [PsuedoQueue](/linked-list/codechallengesREADME/README.codechallenge11.md)
 10. [Animal Shelter](/linked-list/codechallengesREADME/README.codechallenge12.md)
+10. [Validate Brackets](/linked-list/codechallengesREADME/README.codechallenge13.md)
 
 
