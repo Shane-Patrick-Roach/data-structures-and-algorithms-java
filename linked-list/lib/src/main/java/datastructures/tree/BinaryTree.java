@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class BinaryTree {
 
-    Node root;
+    public Node root;
     ArrayList<Integer> values = new ArrayList<>();
     int maximumValue;
 
@@ -88,7 +88,6 @@ public class BinaryTree {
             if (node.rightNode != null){
                 queue.enqueue(node.rightNode);
             }
-
         }
         maximumValue = maxValue;
     }

@@ -13,9 +13,10 @@
 8. [Stacks and Queues Implementation](/linked-list/README.stacksAndQueues.md)
 9. [PsuedoQueue](/linked-list/codechallengesREADME/README.codechallenge11.md)
 10. [Animal Shelter](/linked-list/codechallengesREADME/README.codechallenge12.md)
-10. [Validate Brackets](/linked-list/codechallengesREADME/README.codechallenge13.md)
-10. [Trees](/linked-list/README.trees.md)
-10. [Trees: Maximum Value in Binary Tree](/linked-list/README.trees.md)
+11. [Validate Brackets](/linked-list/codechallengesREADME/README.codechallenge13.md)
+12. [Trees](/linked-list/README.trees.md)
+13. [Trees: Maximum Value in Binary Tree](/linked-list/README.trees.md)
+14. [Trees: Breadth First Traverse](/linked-list/codechallengesREADME/README.codechallenge17.md)
 
 
 
