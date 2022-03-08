@@ -1,14 +1,10 @@
 package datastructures.linkedlist;
 
-import com.sun.source.tree.WhileLoopTree;
-import datastructures.linkedlist.Node;
-
-import java.util.ArrayList;
-
 import static java.lang.Math.abs;
 
 public class LinkedList {
   Node head = null;
+  Node tail = null;
   int size;
 
 
@@ -44,10 +40,36 @@ public class LinkedList {
     return reversedLinkedList;
   }
 
+
+  public void reverseTwo(){
+    Node currentNode = head;
+    head = tail;
+    tail = currentNode;
+
+    Node previousNode = null;
+    Node nextNode;
+
+    while (currentNode != null){
+      nextNode = currentNode.getNext();
+      currentNode.setNext(previousNode);
+      previousNode = currentNode;
+      currentNode = nextNode;
+    }
+  }
+
+
+
   public void insert(int value) {
     Node newHead = new Node(value);
-    newHead.setNext(head);
-    head = newHead;
+
+    if (head == null){
+      head = newHead;
+      tail = newHead;
+    }
+    else {
+      newHead.setNext(head);
+      head = newHead;
+    }
   }
 
 

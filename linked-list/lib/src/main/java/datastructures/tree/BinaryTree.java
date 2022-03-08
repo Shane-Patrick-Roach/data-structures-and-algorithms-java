@@ -1,12 +1,15 @@
 package datastructures.tree;
 
+import datastructures.queue.Queue;
+
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class BinaryTree {
 
     Node root;
     ArrayList<Integer> values = new ArrayList<>();
+    int maximumValue;
 
     public ArrayList preOrderTraversal(){
         if (root == null){
@@ -66,5 +69,33 @@ public class BinaryTree {
         }
         values.add(node.value);
     }
+
+    public void findMaxValue() throws Exception {
+        if (root == null) {throw new Exception();}
+
+        int maxValue = root.value;
+        Queue<Node> queue = new Queue<>();
+        queue.enqueue(root);
+
+        while(queue.size!=0){
+            Node node = queue.dequeue();
+            if (node.value > maxValue){
+                maxValue = node.value;
+            }
+            if (node.leftNode != null){
+                queue.enqueue(node.leftNode);
+            }
+            if (node.rightNode != null){
+                queue.enqueue(node.rightNode);
+            }
+
+        }
+        maximumValue = maxValue;
+    }
+
+
+
+
+
 
 }

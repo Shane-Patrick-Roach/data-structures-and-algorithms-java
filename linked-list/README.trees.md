@@ -23,6 +23,11 @@ This class should be a sub-class (or your languages equivalent) of the Binary Tr
 - `Add`, Arguments: value, Return: nothing, Adds a new node with that value in the correct location in the binary search tree.
 - `Contains`, Argument: value, Returns: boolean indicating whether or not the value is in the tree at least once.
 
+### Create a method to find the maximum value in a Binary Tree
+
+- `findMax`, Arguments: none, Returns: number.
+
+Code Challenge 16 Whiteboard: ![Code Challenge 16 Diagram](./lib/images/Java_CodeChallenge16.jpg)
 ## API
 
 ### Binary Tree
@@ -44,6 +49,14 @@ This class should be a sub-class (or your languages equivalent) of the Binary Tr
 - O(n)
 - `testPostOrderTraversal`
 
+#### findMax
+
+- Approach is outlined in the following whiteboard. There were several ways I though about this algorithm. I decidec to traverse the tree
+using a breadth first approach. Breadth first approach uses a queue to keep track of where you are in the tree traversal. 
+- The space efficiency is approximately O(n) with a little additional memory being allocated with in the queue data structure.
+- The runtime efficiency is also O(n) because the entire tree has to be traversed inorder to find the maximum value.
+- `testBinaryTreeFindMaximumValueUsingBreadth` to test a maximum value in a stack is correct.
+- `testBinaryTreeFindMaximumValEmptyTree` to test if an exception is thrown for empty tree.
 
 ### Binary Search Tree
 
