@@ -14,5 +14,8 @@
 9. [PsuedoQueue](/linked-list/codechallengesREADME/README.codechallenge11.md)
 10. [Animal Shelter](/linked-list/codechallengesREADME/README.codechallenge12.md)
 10. [Validate Brackets](/linked-list/codechallengesREADME/README.codechallenge13.md)
+10. [Trees](/linked-list/README.trees.md)
+10. [Trees: Maximum Value in Binary Tree](/linked-list/README.trees.md)
+
 
 

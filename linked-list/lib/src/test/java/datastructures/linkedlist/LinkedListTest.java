@@ -263,6 +263,21 @@ public class LinkedListTest
     }
 
 
+    @Test
+    void testReverseTwo(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(1);
+        list1.insert(2);
+        list1.insert(3);
+
+        System.out.println(list1.tail.value);
+        System.out.println(list1);
+        list1.reverseTwo();
+        System.out.println(list1);
+
+    }
+
+
 
 }
 
