@@ -5,7 +5,7 @@ import datastructures.kTree.KaryTree;
 
 import org.junit.jupiter.api.Test;
 
-public class TestKaryTreeIntegers {
+public class TestKaryTree {
 
 
 

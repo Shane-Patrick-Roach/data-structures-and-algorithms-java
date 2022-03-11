@@ -5,66 +5,68 @@ import datastructures.kTree.Node;
 
 public class KaryTreeFizzBuzz {
 
-    KaryTree<String> outputTree;
 
-    public KaryTree<String> fizzBuzz(KaryTree<Integer> inputTree){
-
-        KaryTree<String> outputTree = new KaryTree<>(inputTree.getK(),null);
-        preOrder(inputTree.root);
-
+    public static KaryTree<String> fizzBuzz(KaryTree<Integer> inputTree) throws Exception {
+        if (inputTree.root == null) return null;
+        return preOrder(inputTree.root, null);
     }
 
-    private void preOrder(Node<Integer> inputCurrentNode){
-        Node<String> previousNode;
+    private static KaryTree<String> preOrder(Node<Integer> intNode, Node<String> strNode) {
+        KaryTree<String> strKTree = null;
+        strNode = strNode;
 
-
-        if (outputTree.root == null) {
-
-            if (inputCurrentNode.getValue() % 5 == 0) {
-                Node<String> outputNode = new Node<>("Fizz", 3);
-                outputTree.setRoot(outputNode);
-                previousNode =outputNode;
-            } else if (inputCurrentNode.getValue() % 3 == 0) {
-                Node<String> outputNode = new Node<>("Buzz", 3);
-                outputTree.setRoot(outputNode);
-                previousNode =outputNode;
-            } else if (inputCurrentNode.getValue() % 3 == 0 && inputCurrentNode.getValue() % 5 == 0) {
-                Node<String> outputNode = new Node<>("Fizz Buzz", 3);
-                outputTree.setRoot(outputNode);
-                previousNode =outputNode;
-            } else {
-                Node<String> outputNode = new Node<>(inputCurrentNode.getValue().toString(), 3);
-                outputTree.setRoot(outputNode);
-                previousNode = outputNode;
+        if (strNode == null) {
+            if (intNode.value % 5 == 0 && intNode.value % 3 == 0){
+                Node <String> newStrNode = new Node<>("Fizz Buzz", intNode.getkMaxChildren());
+                strKTree = new KaryTree<>(intNode.getkMaxChildren(),newStrNode);
+                strNode = newStrNode;
+            }
+            else if (intNode.value % 3 == 0){
+                Node <String> newStrNode = new Node<>("Fizz", intNode.getkMaxChildren());
+                strKTree = new KaryTree<>(intNode.getkMaxChildren(),newStrNode);
+                strNode = newStrNode;
+            }
+            else if (intNode.value % 5 == 0){
+                Node <String> newStrNode = new Node<>("Buzz", intNode.getkMaxChildren());
+                strKTree = new KaryTree<>(intNode.getkMaxChildren(),newStrNode);
+                strNode = newStrNode;
+            }
+            else {
+                Node <String> newStrNode = new Node<>(Integer.toString(intNode.value), intNode.getkMaxChildren());
+                strKTree = new KaryTree<>(intNode.getkMaxChildren(),newStrNode);
+                strNode = newStrNode;
             }
         } else {
-                if (inputCurrentNode.getValue() % 5 == 0) {
-                    Node<String> outputNode = new Node<>("Fizz", 3);
-                    if (previosNode != null) {
-                        previosNode.addChild(outputNode);
-                    }
-                } else if (inputCurrentNode.getValue() % 3 == 0) {
-                    Node<String> outputNode = new Node<>("Buzz", 3);
-                    if (previosNode != null) {
-                        previosNode.addChild(outputNode);
-                    }
-                } else if (inputCurrentNode.getValue() % 3 == 0 && inputCurrentNode.getValue() % 5 == 0) {
-                    Node<String> outputNode = new Node<>("Fizz Buzz", 3);
-                    if (previosNode != null) {
-                        previosNode.addChild(outputNode);
-                    }
-                } else {
-                    Node<String> outputNode = new Node<>(inputCurrentNode.getValue().toString(), 3);
-                    if (previosNode != null) {
-                        previosNode.addChild(outputNode);
-                    }
-                }
-                for (Node childrenNode : inputCurrentNode.getChildren()) {
-                    preOrder(childrenNode);
-                }
-
+            if (intNode.value % 5 == 0 && intNode.value % 3 == 0){
+                Node <String> newStrNode = new Node<>("Fizz Buzz", intNode.getkMaxChildren());
+                strNode.addChild(newStrNode);
+                strNode = newStrNode;
+            }
+            else if (intNode.value % 5 == 0){
+                Node <String> newStrNode = new Node<>("Buzz", intNode.getkMaxChildren());
+                strNode.addChild(newStrNode);
+                strNode = newStrNode;
+            }
+            else if (intNode.value % 3 == 0){
+                Node <String> newStrNode = new Node<>("Fizz", intNode.getkMaxChildren());
+                strNode.addChild(newStrNode);
+                strNode = newStrNode;
+            }
+            else {
+                Node <String> newStrNode = new Node<>(Integer.toString(intNode.value), intNode.getkMaxChildren());
+                strNode.addChild(newStrNode);
+                strNode = newStrNode;
             }
         }
+
+        if (intNode.getChildren() != null){
+            for (Node node:intNode.getChildren()) {
+                preOrder(node, strNode);
+            }
+        }
+
+        return strKTree;
+    }
 
 
 }
