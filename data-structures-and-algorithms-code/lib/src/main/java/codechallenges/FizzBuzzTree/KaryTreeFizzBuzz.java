@@ -1,4 +1,4 @@
-package codechallenges.karyTree;
+package codechallenges.FizzBuzzTree;
 
 import datastructures.kTree.KaryTree;
 import datastructures.kTree.Node;
