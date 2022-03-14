@@ -2,7 +2,7 @@
 Implement a First In First Out Animal Shelter
 
 ## Whiteboard Process
-Code Challenge 11: ![Code Challenge 12 Diagram](../lib/images/Java_CodeChallenge12.jpg)
+Code Challenge 11: ![Code Challenge 12 Diagram](../lib/images/Java_CodeChallenge06.jpg)
 
 
 ## Approach & Efficiency
