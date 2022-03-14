@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ac07914-d6c6-4e29-9551-6ae520fe10a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.linkedLists.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.stacksAndQueues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.trees.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechallengesREADME/README.codechallenge11.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechallengesREADME/README.codechallenge12.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechallengesREADME/README.codechallenge13.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechallengesREADME/README.codechallenge17.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechallengesREADME/README.codechallenge18.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/images/Java_CodeChallenge06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/images/Java_CodeChallenge13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/images/Java_CodeChallenge17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/images/Java_CodeChallenge18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/animalShelter/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/animalShelter/AnimalShelter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/breadthFirstTraverse/BreadthFirstTraverse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/karyTree/KaryTreeFizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/psuedoQueue/PsuedoQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/codechallenges/validateBrackets/ValidateBrackets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/kTree/KaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/kTree/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/linkedlist/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/linkedlist/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/queue/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/stack/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/stack/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/tree/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/tree/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/datastructures/tree/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/codechallenges/animalShelter/AnimalShelterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/codechallenges/breadthFirstTravere/BreadthFirstTraverseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/codechallenges/psuedoQueue/PsuedoQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/codechallenges/validateBrackets/ValidateBracketsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/karyTree/TestFizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/karyTree/TestKaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/linkedlist/LinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/queue/QueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/stack/StackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/tree/TestBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/tree/TestBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/datastructures/tree/TestBinaryTreeMaxValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="datastructures" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25IwXFKH7oguWKn2JC1v8jvMivT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/images" />
+      <recent name="$PROJECT_DIR$/codechallengesREADME" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/linked/list/LinkedListChallenge" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.TestFizzBuzz.testKaryTreeEmptyTree">
+    <configuration name="TestFizzBuzz.testKaryTreeEmptyTree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;datastructures.karyTree.TestFizzBuzz.testKaryTreeEmptyTree&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestKaryTreeIntegers.testKaryTreePreOrderStrings" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;datastructures.karyTree.TestKaryTreeIntegers.testKaryTreePreOrderStrings&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="testFizzBuzz.testKaryTreeEmptyTree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;datastructures.karyTree.testFizzBuzz.testKaryTreeEmptyTree&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="testFizzBuzz.testKaryTreeFizzBuzz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;datastructures.karyTree.testFizzBuzz.testKaryTreeFizzBuzz&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="testFizzBuzz.testKaryTreeOneValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;datastructures.karyTree.testFizzBuzz.testKaryTreeOneValue&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="linked-list" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="linked-list" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TestFizzBuzz.testKaryTreeEmptyTree" />
+        <item itemvalue="Gradle.testFizzBuzz.testKaryTreeEmptyTree" />
+        <item itemvalue="Gradle.testFizzBuzz.testKaryTreeOneValue" />
+        <item itemvalue="Gradle.testFizzBuzz.testKaryTreeFizzBuzz" />
+        <item itemvalue="Gradle.TestKaryTreeIntegers.testKaryTreePreOrderStrings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ac07914-d6c6-4e29-9551-6ae520fe10a2" name="Changes" comment="" />
+      <created>1645227946333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645227946333</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/datastructures$AnimalShelterTest_testAnimalShelterEnqueue.ic" NAME="AnimalShelterTest.testAnimalShelterEnqueue Coverage Results" MODIFIED="1646194476199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
