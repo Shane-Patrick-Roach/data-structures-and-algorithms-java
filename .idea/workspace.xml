@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20978a5b-c6e3-40bb-982c-6a155a544004" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/linked-list/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/README.linkedLists.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/README.stacksAndQueues.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/README.trees.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/codechallengesREADME/README.codechallenge11.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/codechallengesREADME/README.codechallenge12.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/codechallengesREADME/README.codechallenge13.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/codechallengesREADME/README.codechallenge17.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/codechallengesREADME/README.codechallenge18.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/images/Java_CodeChallenge06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/images/Java_CodeChallenge13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/images/Java_CodeChallenge17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/images/Java_CodeChallenge18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/animalShelter/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/animalShelter/AnimalShelter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/breadthFirstTraverse/BreadthFirstTraverse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/karyTree/KaryTreeFizzBuzz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/psuedoQueue/PsuedoQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/codechallenges/validateBrackets/ValidateBrackets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/kTree/KaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/kTree/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/linkedlist/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/linkedlist/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/queue/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/queue/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/stack/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/stack/Stack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/tree/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/tree/BinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/main/java/datastructures/tree/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/codechallenges/animalShelter/AnimalShelterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/codechallenges/breadthFirstTravere/BreadthFirstTraverseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/codechallenges/psuedoQueue/PsuedoQueueTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/codechallenges/validateBrackets/ValidateBracketsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/karyTree/TestFizzBuzz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/karyTree/TestKaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/linkedlist/LinkedListTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/queue/QueueTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/stack/StackTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/tree/TestBinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/tree/TestBinaryTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/lib/src/test/java/datastructures/tree/TestBinaryTreeMaxValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list/settings.gradle" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures-and-algorithms-code/lib/src/main/java/codechallenges/insertionSort/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +25,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data-structures-and-algorithms-code/lib/src/main/java/codechallenges" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,5 +40,16 @@
       <updated>1646675572519</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
