@@ -11,13 +11,22 @@ import static codechallenges.quickSort.QuickSort.quickSort;
 public class QuickSortTest {
     @Test
     void testPartitionHelperFunction() throws Exception {
-        QuickSort sut = new QuickSort();
-
         Integer[] arr = new Integer[]{8, 4, 23, 42, 16, 15};
 
         System.out.println(partition(arr, 0,5));
         System.out.println(Arrays.toString(arr));
         assert(Arrays.toString(arr).equals("[8, 4, 15, 42, 16, 23]"));
+    }
+
+    @Test
+    void testPartitionHelperFunctionArrayTwo() throws Exception {
+        Integer[] arr = new Integer[]{8, 4, 23, 42, 16, 15};
+
+        partition(arr, 4,5);
+
+        System.out.println(Arrays.toString(quickSort(arr, 4, 3)));
+        System.out.println(Arrays.toString(quickSort(arr, 5, 5)));
+        //quickSort()
     }
     
     @Test
