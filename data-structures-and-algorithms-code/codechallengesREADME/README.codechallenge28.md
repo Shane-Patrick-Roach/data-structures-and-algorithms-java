@@ -50,7 +50,7 @@ The pivot value though is in its final correct place though. We return the Low i
 
 ### Part 2: Quicksort Run through
 
-![Overall](../lib/images/Overall_CC28.png)
+![quickSort](../lib/images/quickSort_CC28.png)
 
 Here is an example run through of our quickSort function with the input array and a left and right bounds of 4 and 5. The base condition for this recursive function is the left index must be
 less than the right index. First we have to define the position of the pivot value. This is done using our partition helper function described above. We then use this

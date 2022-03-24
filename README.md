@@ -20,6 +20,7 @@
 15. [Trees: Kary Tree](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge18.md)
 16. [Insertion Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge26.md)
 17. [Merge Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge27.md)
+18. [Quick Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge28.md)
 
 
 
