@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-// NOTE: Does NOT preserve insertion order!
-// WARNING: Don't make K an Object or Character!
 public class HashMap<K, V>
 {
-    ArrayList<LinkedList<HashMapPair<K, V>>> bucketArrayList;  // using ArrayList instead of array so we can instantiate with a parameterized type
+    ArrayList<LinkedList<HashMapPair<K, V>>> bucketArrayList;
     int size;
 
     public HashMap(int size)
@@ -23,41 +21,73 @@ public class HashMap<K, V>
         this.size = size;
         this.bucketArrayList = new ArrayList<>(size);
 
+
+
+        for (int i = 0; i < this.size; i++)
+        {
+            bucketArrayList.add(i, new LinkedList<>());
+        }
     }
 
 
     public void set(K key, V value) {
-        int index = hash((String) key);
-        LinkedList<HashMapPair<K,V>> links = bucketArrayList.get(index);
+        int index = hash((K) key);
 
-        if(links == null){
-            links = new LinkedList<>();
-            bucketArrayList.add(index, links);
-            links.add(new HashMapPair<K,V>(key, value));
-        }
-        for (HashMapPair<K,V> pair: links){
-            if (pair.getKey() == key){
-                pair.setValue(value);
+        LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+
+        if(list.size() != 0){
+            for (HashMapPair<K,V> pair : list){
+                if (pair.getKey() == key){
+                    pair.setValue(value);
+                    return;
+                }
             }
+            list.add(new HashMapPair<>(key, value));
+        } else {
+            list.add(new HashMapPair<>(key, value));
         }
     }
 
     public V get(K key)
     {
-        // TODO: implement me
+        int index = hash((K) key);
+        LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+
+
+        for (HashMapPair<K,V> pair : list){
+            if (pair.getKey() == key){
+                return pair.getValue();
+            }
+        }
+
         return null;
     }
 
     public boolean contains(K key)
     {
-        // TODO: implement me
+
+        int index = hash((K) key);
+        LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
+
+
+        for (HashMapPair<K,V> pair : list){
+            if (pair.getKey() == key){
+                return true;
+            }
+        }
+
         return false;
     }
 
     public List<K> keys()
     {
-        // TODO: implement me
-        return null;
+        List<K> keysList = new ArrayList<>();
+        for (LinkedList<HashMapPair<K, V>> list : bucketArrayList) {
+            for (HashMapPair<K, V> pair : list) {
+                keysList.add(pair.getKey());
+            }
+        }
+        return keysList;
     }
 
     // Sometimes hashCode in Java can be negative! So we need to do absolute value
@@ -67,7 +97,7 @@ public class HashMap<K, V>
     // Protip: Testing collisions is easy with Integer, because Integer hashes to its own value
 
 
-    public int hash(String key) {
+    public int hash(K key) {
 //        int total = 0;
 //        int PRIME = 31;
 //        for (int i = 0; i < key.length(); i++) {
@@ -79,5 +109,9 @@ public class HashMap<K, V>
         //return total;
         return Math.abs(key.hashCode()) % size;
     }
+
+
+
+
 
 }

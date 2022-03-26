@@ -21,6 +21,7 @@
 16. [Insertion Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge26.md)
 17. [Merge Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge27.md)
 18. [Quick Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge28.md)
+19. [Hash Table](/data-structures-and-algorithms-code/README.hashMap.md)
 
 
 
