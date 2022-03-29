@@ -21,8 +21,6 @@ public class HashMap<K, V>
         this.size = size;
         this.bucketArrayList = new ArrayList<>(size);
 
-
-
         for (int i = 0; i < this.size; i++)
         {
             bucketArrayList.add(i, new LinkedList<>());
@@ -37,7 +35,7 @@ public class HashMap<K, V>
 
         if(list.size() != 0){
             for (HashMapPair<K,V> pair : list){
-                if (pair.getKey() == key){
+                if (pair.getKey().equals(key)){
                     pair.setValue(value);
                     return;
                 }
@@ -53,29 +51,24 @@ public class HashMap<K, V>
         int index = hash((K) key);
         LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
 
-
         for (HashMapPair<K,V> pair : list){
-            if (pair.getKey() == key){
+            if (pair.getKey().equals(key)){
                 return pair.getValue();
             }
         }
-
         return null;
     }
 
     public boolean contains(K key)
     {
-
         int index = hash((K) key);
         LinkedList<HashMapPair<K,V>> list = bucketArrayList.get(index);
 
-
         for (HashMapPair<K,V> pair : list){
-            if (pair.getKey() == key){
+            if (pair.getKey().equals(key)){
                 return true;
             }
         }
-
         return false;
     }
 
@@ -85,6 +78,19 @@ public class HashMap<K, V>
         for (LinkedList<HashMapPair<K, V>> list : bucketArrayList) {
             for (HashMapPair<K, V> pair : list) {
                 keysList.add(pair.getKey());
+            }
+        }
+        return keysList;
+    }
+
+
+    public List<String> keyAndValues()
+    {
+        List<String> keysList = new ArrayList<>();
+        for (LinkedList<HashMapPair<K, V>> list : bucketArrayList) {
+            for (HashMapPair<K, V> pair : list) {
+                String build = "Word: " + pair.getKey().toString() + " - Count: " + pair.getValue().toString();
+                keysList.add(build);
             }
         }
         return keysList;

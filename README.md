@@ -3,13 +3,13 @@
 
 ## Table of Contents
 
-1. [array-revere](/array-reverse/README.md)
-2. [binary-search](/binary-search/README.md)
-3. [insert-shift-array](/insertShiftArray/README.md)
-4. [linked-list: insert, include](/data-structures-and-algorithms-code/README.linkedLists.md)
-5. [linked-list: append, insertBefore, insertAfter](/data-structures-and-algorithms-code/README.linkedLists.md)
-6. [linked-list: kth](/data-structures-and-algorithms-code/README.linkedLists.md)
-7. [linked-list: zip](/data-structures-and-algorithms-code/README.linkedLists.md)
+1. [Array-revere](/array-reverse/README.md)
+2. [Binary-search](/binary-search/README.md)
+3. [Insert-shift-array](/insertShiftArray/README.md)
+4. [Linked-list: insert, include](/data-structures-and-algorithms-code/README.linkedLists.md)
+5. [Linked-list: append, insertBefore, insertAfter](/data-structures-and-algorithms-code/README.linkedLists.md)
+6. [Linked-list: kth](/data-structures-and-algorithms-code/README.linkedLists.md)
+7. [Linked-list: zip](/data-structures-and-algorithms-code/README.linkedLists.md)
 8. [Stacks and Queues Implementation](/linked-list/README.stacksAndQueues.md)
 9. [PsuedoQueue](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge11.md)
 10. [Animal Shelter](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge12.md)
@@ -22,6 +22,8 @@
 17. [Merge Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge27.md)
 18. [Quick Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge28.md)
 19. [Hash Table](/data-structures-and-algorithms-code/README.hashMap.md)
+19. [Hash Table: Repeated-Word](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge31.md)
+
 
 
 
