@@ -9,4 +9,5 @@ public class HashMapPair<K, V> extends AbstractMap.SimpleEntry<K, V>
         super(key, value);
     }
 
+
 }
