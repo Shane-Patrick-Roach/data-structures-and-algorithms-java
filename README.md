@@ -23,6 +23,7 @@
 18. [Quick Sort: Blog](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge28.md)
 19. [Hash Table](/data-structures-and-algorithms-code/README.hashMap.md)
 19. [Hash Table: Repeated-Word](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge31.md)
+20. [Hash Table: Tree-Intersection](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge32.md)
 
 
 

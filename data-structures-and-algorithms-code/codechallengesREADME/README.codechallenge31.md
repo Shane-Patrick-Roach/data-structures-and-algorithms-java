@@ -6,7 +6,7 @@ Write a function called repeated word that finds the first word to occur more th
 `Return`: String 
 
 ## Whiteboard Process
-Code Challenge 18: ![Code Challenge 31 Diagram](../lib/images/Java_CodeChallenge31.png)
+![Code Challenge 31 Diagram](../lib/images/Java_CodeChallenge31.png)
 
 ## Approach and Efficiency
 
