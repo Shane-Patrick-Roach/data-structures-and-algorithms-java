@@ -8,10 +8,10 @@ import java.util.ArrayList;
 public class BinaryTree {
 
     public Node root;
-    ArrayList<Integer> values = new ArrayList<>();
+    static ArrayList<Integer> values = new ArrayList<>();
     int maximumValue;
 
-    public ArrayList preOrderTraversal(){
+    public ArrayList<Integer> preOrderTraversal(){
         if (root == null){
             return null;
         }
