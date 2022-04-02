@@ -2,9 +2,9 @@ package datastructures.linkedlist;
 
 import static java.lang.Math.abs;
 
-public class LinkedList {
-  Node head = null;
-  Node tail = null;
+public class LinkedList <T>{
+  Node<T> head = null;
+  Node<T> tail = null;
   int size;
 
 
@@ -60,7 +60,7 @@ public class LinkedList {
 
 
   public void insert(int value) {
-    Node newHead = new Node(value);
+    Node<T> newHead = new Node(value);
 
     if (head == null){
       head = newHead;
@@ -96,13 +96,13 @@ public class LinkedList {
     return false;
   }
 
-  public void append(int value){
+  public void append(T value){
     Node currentNode = head;
     while (currentNode != null){
       //System.out.println(currentNode);
       if (currentNode.getNext() == null){
         //System.out.println("i am here");
-        Node newNextNode = new Node(value);
+        Node newNextNode = new Node((Integer) value);
         newNextNode.setNext(null);
         currentNode.setNext(newNextNode);
         break;
@@ -134,7 +134,7 @@ public class LinkedList {
   }
 
   public void insertAfter(int value, int newValue){
-    Node currentNode = head;
+    Node<T> currentNode = head;
     while (currentNode != null){
       if (currentNode.getValue() == value){
         Node newInsertNode = new Node(newValue);
