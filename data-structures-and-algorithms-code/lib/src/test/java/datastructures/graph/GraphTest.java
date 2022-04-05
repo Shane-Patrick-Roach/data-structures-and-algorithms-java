@@ -165,6 +165,9 @@ public class GraphTest {
 
         sut.addEdge(vertexC,vertexF);
 
+
+        System.out.println(sut.getNeighbors(vertexC));
+
         assert (sut.getNeighbors(vertexC).toString().equals("[Destination: B, Weight: 0, Destination: D, Weight: 0, Destination: F, Weight: 0]"));
     }
 }
