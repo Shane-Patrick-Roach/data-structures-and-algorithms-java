@@ -1,6 +1,7 @@
 package datastructures.graph;
 
 import datastructures.hashmap.HashMap;
+import datastructures.queue.Queue;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -60,6 +61,35 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
         return numberOfVertices;
     }
 
+
+    public List<Vertex<T>> graphBreadthFirstTraverse(Vertex<T> vertex) throws Exception {
+
+        Queue<Vertex<T>> queue = new Queue<>();
+        HashMap<Vertex<T>, Integer> hashmap = new HashMap<>(size() * 2);
+        List<Vertex<T>> collection = new ArrayList<>();
+
+        queue.enqueue(vertex);
+        hashmap.set(vertex, 1);
+
+        while (queue.size != 0) {
+            Vertex<T> currentVertex = queue.dequeue();
+            collection.add(currentVertex);
+
+            if (adjacencyLists.get(currentVertex) != null) {
+                LinkedList<Edge<T>> currentKeyEdgeList = adjacencyLists.get(currentVertex);
+
+                for (Edge<T> neighbors : currentKeyEdgeList) {
+                    if (hashmap.contains(neighbors.destination)) continue;
+                    hashmap.set(neighbors.destination, 1);
+                    queue.enqueue(neighbors.destination);
+
+                }
+            }
+        }
+        return collection;
+    }
+
+
     @Override
     public int compareTo(Graph<T> o) {
         throw new UnsupportedOperationException("Graph does not implement compareTo()");
@@ -70,14 +100,14 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
 
         String stringBuilder = "";
 
-        List <Vertex<T>> keysList = adjacencyLists.keys();
-        for (Vertex<T> key : keysList){
-            String newString = key.value.toString()+": ";
+        List<Vertex<T>> keysList = adjacencyLists.keys();
+        for (Vertex<T> key : keysList) {
+            String newString = key.value.toString() + ": ";
 
             LinkedList<Edge<T>> currentKeyEdgeList = adjacencyLists.get(key);
-            for (Edge<T> edge : currentKeyEdgeList){
+            for (Edge<T> edge : currentKeyEdgeList) {
 
-               newString += edge.destination.value.toString();
+                newString += edge.destination.value.toString();
 
             }
             stringBuilder += newString + "\n";
