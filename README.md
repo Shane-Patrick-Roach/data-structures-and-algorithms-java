@@ -28,6 +28,7 @@
 23. [Graph](/data-structures-and-algorithms-code/README.graph.md)
 24. [Graph: Breadth-first](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge36.md)
 25. [Graph: Business Trip](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge37.md)
+26. [Graph: Depth Preorder Traversal](/data-structures-and-algorithms-code/codechallengesREADME/README.codechallenge38.md)
 
 
 

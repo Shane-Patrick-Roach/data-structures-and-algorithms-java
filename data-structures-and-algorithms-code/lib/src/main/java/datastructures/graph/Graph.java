@@ -89,6 +89,18 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
         return collection;
     }
 
+    public List<T> graphDepthPreOrderTraversal(Vertex<T> vertex, List<T> list, HashMap<Vertex<T>, Integer> hashmap){
+        list.add(vertex.value);
+        hashmap.set(vertex,1);
+
+        for (Edge<T> neighbor : adjacencyLists.get(vertex)){
+            if(!hashmap.contains(neighbor.destination)){
+                graphDepthPreOrderTraversal(neighbor.destination, list, hashmap);
+            }
+        }
+        return list;
+    }
+
 
     @Override
     public int compareTo(Graph<T> o) {
@@ -115,4 +127,6 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
 
         return stringBuilder;
     }
+
+
 }

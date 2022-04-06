@@ -7,9 +7,11 @@ Implement a breadth-first traversal on a graph.
 `Return`: A collection of nodes in the order they were visited.
 
 ## Whiteboard Process
-![Code Challenge 33 Diagram](../lib/images/Java_CodeChallenge36.png)
+![Code Challenge 36 Diagram](../lib/images/Java_CodeChallenge36.png)
 
 ## Approach and Efficiency
+
+`NOTE: the function was added as a method inside the graph class.`
 
 The approach I took was to implement a queue and a hashmap to traverse breadth-wise through the graph. To start, the vertex entered as an argument
 was enqueued. Then while the queue was populated, the current node was added to the returned collection, and each of its edge nodes were enqueued. To 
