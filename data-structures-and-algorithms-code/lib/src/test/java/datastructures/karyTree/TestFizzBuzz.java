@@ -1,11 +1,11 @@
 package datastructures.karyTree;
 
-import codechallenges.FizzBuzzTree.KaryTreeFizzBuzz;
+import codechallenges.fizzBuzzTree.KaryTreeFizzBuzz;
 import datastructures.kTree.KaryTree;
 import datastructures.kTree.Node;
 import org.junit.jupiter.api.Test;
 
-import static codechallenges.FizzBuzzTree.KaryTreeFizzBuzz.fizzBuzz;
+import static codechallenges.fizzBuzzTree.KaryTreeFizzBuzz.fizzBuzz;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestFizzBuzz {

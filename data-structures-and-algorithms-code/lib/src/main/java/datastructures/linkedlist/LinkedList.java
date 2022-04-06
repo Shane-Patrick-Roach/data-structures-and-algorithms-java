@@ -9,12 +9,12 @@ public class LinkedList <T>{
 
 
 
-  public Boolean isPalindrome(LinkedList list){
-    LinkedList list1 = list;
-    LinkedList list2 = list.reverse();
+  public Boolean isPalindrome(LinkedList<T> list){
+    LinkedList<T> list1 = list;
+    LinkedList<T> list2 = list.reverse();
 
-    Node currentNodeList1 = list1.head;
-    Node currentNodeList2 = list2.head;
+    Node<T> currentNodeList1 = list1.head;
+    Node<T> currentNodeList2 = list2.head;
 
     while (currentNodeList1 != null || currentNodeList2 != null){
       if (currentNodeList1.value == currentNodeList2.value){
@@ -29,6 +29,45 @@ public class LinkedList <T>{
     return true;
 
   }
+
+
+//  public LinkedList removeSecondFromEnd(LinkedList list){
+//
+//
+//    Node currentNode = head;
+//
+//    for(int i = 1; i < size; i++){
+//
+//      if(i == size - 2){
+//        currentNode.setNext(null);
+//        break;
+//      }
+//      currentNode = currentNode.nextNode;
+//    }
+//
+//    return list;
+//  }
+
+
+  public LinkedList removeSecondFromEnd(LinkedList list){
+
+
+    Node currentNode = head;
+
+    while(currentNode != null){
+
+      if(currentNode.getNext().getNext() == null){
+        currentNode.setNext(null);
+        break;
+      }
+      currentNode = currentNode.nextNode;
+    }
+    System.out.println("Im here");
+
+    return list;
+  }
+
+
 
   public LinkedList reverse(){
     LinkedList reversedLinkedList = new LinkedList();

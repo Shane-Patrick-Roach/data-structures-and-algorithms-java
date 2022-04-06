@@ -145,6 +145,22 @@ public class LinkedListTest
 
 
     @Test
+    void testRemoveSecondFromEnd() throws Exception{
+        LinkedList sut = new LinkedList();
+        sut.insert(5);
+        sut.insert(10);
+        sut.insert(3);
+        sut.insert(10);
+        sut.insert(333);
+        sut.insert(102);
+        System.out.println(sut.toString());
+        sut.size();
+        System.out.println(sut.size());
+        sut.removeSecondFromEnd(sut);
+        System.out.println(sut.removeSecondFromEnd(sut));
+    }
+
+    @Test
     void testKthFromEndGreaterThanLength() throws Exception{
         LinkedList sut = new LinkedList();
         sut.insert(5);
