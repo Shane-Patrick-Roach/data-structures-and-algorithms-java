@@ -31,6 +31,27 @@ public class LinkedList <T>{
   }
 
 
+  public int findMaxProduct(){
+    Node currentNode = head;
+    int largestProd = 0;
+
+
+    while (currentNode != null ){
+      Node nextNode = currentNode.nextNode;
+      while(nextNode != null){
+        if(largestProd < currentNode.getValue()*nextNode.value){
+          largestProd = currentNode.getValue()*nextNode.value;
+        }
+        nextNode = nextNode.nextNode;
+      }
+      currentNode = currentNode.nextNode;
+    }
+    return largestProd;
+  }
+
+
+
+
 //  public LinkedList removeSecondFromEnd(LinkedList list){
 //
 //
