@@ -293,6 +293,19 @@ public class LinkedListTest
 
     }
 
+    @Test
+    void testLargestProd(){
+        LinkedList list1 = new LinkedList();
+        list1.insert(-10);
+        list1.insert(2);
+        list1.insert(-40);
+        list1.insert(2);
+        list1.insert(4);
+
+        System.out.println(list1.findMaxProduct());
+
+    }
+
 
 
 }
